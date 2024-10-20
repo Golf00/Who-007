@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysterious Figure Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Mysterious Figure Game</h1>
+        
+        <!-- ช่องสำหรับผู้เล่นใส่ชื่อ -->
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <button id="startBtn">Start Game</button>
+
+        <!-- พื้นที่ของเกม -->
+        <div id="gameArea" style="display:none;">
+            <p id="question">Translate the word:</p>
+            <input type="text" id="answerInput" placeholder="Enter your answer">
+            <button id="submitBtn">Submit</button>
+            <p id="timer">Time: 5</p>
+
+            <!-- แสดงการ์ด 9 ใบ -->
+            <div id="cardGrid">
+                <div class="card closed" data-index="0">❓</div>
+                <div class="card closed" data-index="1">❓</div>
+                <div class="card closed" data-index="2">❓</div>
+                <div class="card closed" data-index="3">❓</div>
+                <div class="card closed" data-index="4">❓</div>
+                <div class="card closed" data-index="5">❓</div>
+                <div class="card closed" data-index="6">❓</div>
+                <div class="card closed" data-index="7">❓</div>
+                <div class="card closed" data-index="8">❓</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
