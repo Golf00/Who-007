@@ -19,57 +19,61 @@ body {
 #cardGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 5px; /* ลดระยะห่างระหว่างการ์ด */
     margin-top: 20px;
 }
 
 .card {
     width: 100px;
     height: 100px;
-    background-image: url('mysterious-figure.jpg');
-    background-size: 300px 300px;
+    background-size: cover;
     border: 1px solid black;
     cursor: pointer;
 }
 
+/* สถานะของการ์ดที่ปิดอยู่ */
+.card.closed {
+    background-image: url('path-to-your-card-back-image.jpg'); /* ภาพด้านหลังการ์ด */
+    background-size: cover;
+    background-position: center;
+}
+
 /* การตั้งค่าตำแหน่งของการ์ดแต่ละใบในภาพบุคคลปริศนา */
 .card[data-index="0"] {
+    background-image: url('mysterious-figure.jpg');
     background-position: 0 0;
 }
 .card[data-index="1"] {
+    background-image: url('mysterious-figure.jpg');
     background-position: -100px 0;
 }
 .card[data-index="2"] {
+    background-image: url('mysterious-figure.jpg');
     background-position: -200px 0;
 }
 .card[data-index="3"] {
+    background-image: url('mysterious-figure.jpg');
     background-position: 0 -100px;
 }
 .card[data-index="4"] {
+    background-image: url('mysterious-figure.jpg');
     background-position: -100px -100px;
 }
 .card[data-index="5"] {
+    background-image: url('mysterious-figure.jpg');
     background-position: -200px -100px;
 }
 .card[data-index="6"] {
+    background-image: url('mysterious-figure.jpg');
     background-position: 0 -200px;
 }
 .card[data-index="7"] {
+    background-image: url('mysterious-figure.jpg');
     background-position: -100px -200px;
 }
 .card[data-index="8"] {
+    background-image: url('mysterious-figure.jpg');
     background-position: -200px -200px;
-}
-
-/* สถานะของการ์ดที่ปิดอยู่ */
-.card.closed {
-    background-image: none;
-    background-color: #4caf50;
-    color: white;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 input, button {
